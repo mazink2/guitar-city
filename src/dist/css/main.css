@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* MEDIA QUERIES */
+@media (max-width: 374px) {
+  html {
+    font-size: 8px; }
+  div .store-name {
+    width: 90%; }
+  .container .section-title {
+    font-size: 4rem; }
+  .container .offered-section {
+    width: 90%; }
+    .container .offered-section .offers {
+      grid-gap: 6rem;
+      grid-template-columns: 1fr; }
+      .container .offered-section .offers .outer .inner {
+        height: 53rem; }
+        .container .offered-section .offers .outer .inner .text h1 {
+          font-size: 4rem; }
+        .container .offered-section .offers .outer .inner .text p {
+          font-size: 2.2rem;
+          margin-top: 1rem; }
+        .container .offered-section .offers .outer .inner .text button {
+          font-size: 1.8rem;
+          padding: 1rem 2rem; }
+  .container .companies-container {
+    padding: 5rem 10rem; }
+    .container .companies-container .companies-section {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem; }
+  .container .testimonials-section {
+    max-width: 250px; }
+    .container .testimonials-section .testimonials {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+      font-size: 2rem; }
+      .container .testimonials-section .testimonials ul {
+        margin-top: 1.5rem; }
+      .container .testimonials-section .testimonials img {
+        margin-right: 1.5rem;
+        width: 8rem;
+        height: 8rem; }
+  .container .contact-section .form-container {
+    width: 90%; }
+    .container .contact-section .form-container form {
+      padding: 2rem 3rem; }
+  .container footer {
+    font-size: 2rem; }
+    .container footer .footer-container {
+      width: 80%;
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+      grid-template-areas: 'store-info' 'social'  'site-links' 'join' 'copyright'; }
+      .container footer .footer-container button {
+        font-size: 2rem; }
+      .container footer .footer-container .store-info {
+        width: 100%;
+        grid-area: store-info; }
+        .container footer .footer-container .store-info .site-name {
+          font-size: 4rem;
+          text-align: center; }
+      .container footer .footer-container .site-links {
+        grid-area: site-links; }
+      .container footer .footer-container .social-links {
+        grid-area: social; }
+        .container footer .footer-container .social-links ul.list li a .icon-container {
+          width: 3.5rem;
+          height: 3.5rem;
+          line-height: 3.5rem;
+          margin: .4rem 1.2rem; }
+      .container footer .footer-container .join {
+        grid-area: join;
+        margin-top: 1rem; }
+      .container footer .footer-container .copyright {
+        grid-area: copyright;
+        font-size: 2rem; } }
+
+@media (min-width: 375px) and (max-width: 544px) {
+  html {
+    font-size: 9px; }
+  .container .section-title {
+    font-size: 4rem; }
+  .container .offered-section {
+    max-width: 350px; }
+    .container .offered-section .offers {
+      grid-gap: 6rem;
+      grid-template-columns: 1fr; }
+      .container .offered-section .offers .outer .inner {
+        height: 50rem; }
+        .container .offered-section .offers .outer .inner .text h1 {
+          font-size: 4rem; }
+        .container .offered-section .offers .outer .inner .text p {
+          font-size: 2.2rem;
+          margin-top: 1rem; }
+        .container .offered-section .offers .outer .inner .text button {
+          font-size: 1.8rem;
+          padding: 1rem 2rem; }
+  .container .companies-container {
+    padding: 3rem 4rem; }
+    .container .companies-container .companies-section {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5rem; }
+  .container .testimonials-section {
+    max-width: 250px; }
+    .container .testimonials-section .testimonials {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+      font-size: 2rem; }
+      .container .testimonials-section .testimonials ul {
+        margin-top: 1.5rem; }
+      .container .testimonials-section .testimonials img {
+        margin-right: 1.5rem;
+        width: 6rem;
+        height: 6rem; }
+  .container .contact-section .form-container {
+    width: 90%; }
+    .container .contact-section .form-container form {
+      padding: 2rem 3rem; }
+  .container footer {
+    font-size: 2rem; }
+    .container footer .footer-container {
+      width: 80%;
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+      grid-template-areas: 'store-info' 'social'  'site-links' 'join' 'copyright'; }
+      .container footer .footer-container button {
+        font-size: 2rem; }
+      .container footer .footer-container .store-info {
+        width: 100%;
+        grid-area: store-info; }
+        .container footer .footer-container .store-info .site-name {
+          font-size: 4rem;
+          text-align: center; }
+      .container footer .footer-container .site-links {
+        grid-area: site-links; }
+      .container footer .footer-container .social-links {
+        grid-area: social; }
+        .container footer .footer-container .social-links ul.list li a .icon-container {
+          width: 3.5rem;
+          height: 3.5rem;
+          line-height: 3.5rem;
+          margin: .4rem 1.2rem; }
+      .container footer .footer-container .join {
+        grid-area: join; }
+      .container footer .footer-container .copyright {
+        grid-area: copyright;
+        font-size: 2rem; } }
+
+@media (min-width: 545px) and (max-width: 768px) {
+  html {
+    font-size: 11px; }
+  .container .section-title {
+    font-size: 4rem; }
+  .container .offered-section {
+    max-width: 400px; }
+    .container .offered-section .offers {
+      grid-gap: 6rem;
+      grid-template-columns: 1fr; }
+      .container .offered-section .offers .outer .inner {
+        height: 50rem; }
+        .container .offered-section .offers .outer .inner .text h1 {
+          font-size: 4rem; }
+        .container .offered-section .offers .outer .inner .text p {
+          font-size: 2.2rem;
+          margin-top: 1rem; }
+        .container .offered-section .offers .outer .inner .text button {
+          font-size: 1.8rem;
+          padding: 1rem 2rem; }
+  .container .companies-container {
+    padding: 2rem 4rem; }
+    .container .companies-container .companies-section {
+      grid-template-columns: repeat(2, 1fr); }
+  .container .testimonials-section {
+    max-width: 500px; }
+    .container .testimonials-section .testimonials {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 5rem;
+      grid-row-gap: 2rem;
+      font-size: 1.5rem; }
+      .container .testimonials-section .testimonials img {
+        margin-right: .75rem; }
+  .container .contact-section .form-container {
+    max-width: 500px; }
+  .container footer .footer-container {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'store-info store-info store-info' 'social site-links join' 'copyright copyright copyright'; }
+    .container footer .footer-container .store-info {
+      width: 100%;
+      grid-area: store-info; }
+    .container footer .footer-container .site-links {
+      grid-area: site-links; }
+    .container footer .footer-container .social-links {
+      grid-area: social; }
+    .container footer .footer-container .join {
+      grid-area: join; }
+    .container footer .footer-container .copyright {
+      grid-area: copyright; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 11px; }
+  .container .offered-section {
+    max-width: 750px; }
+    .container .offered-section .offers .outer .inner .text p {
+      margin-bottom: 1rem; }
+  .container .companies-container .companies-section {
+    max-width: 750px; }
+  .container .testimonials-section {
+    max-width: 750px; }
+  .container .contact-section .form-container {
+    max-width: 450px; }
+  .container footer .footer-container {
+    max-width: 750px; } }
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 13px; }
+  .container .offered-section {
+    max-width: 900px; }
+    .container .offered-section .offers .outer .inner .text p {
+      margin-bottom: 1rem; }
+  .container .companies-container .companies-section {
+    max-width: 800px; }
+  .container .testimonials-section {
+    max-width: 900px; }
+  .container .contact-section .form-container {
+    max-width: 550px; }
+  .container footer .footer-container {
+    max-width: 900px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  background: #1C2225;
+  color: #c4cace; }
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem; }
+
+.bottom-line {
+  height: 4px;
+  width: 8rem;
+  display: block;
+  background: #f2ff00;
+  margin: 0 auto 4rem auto; }
+
+header {
+  padding: 10px 0px;
+  transition: all 300ms ease-in;
+  font-size: 3rem; }
+  header .header_logo {
+    flex-grow: 1;
+    transition: all 300ms ease-in; }
+  header .header_logo_title {
+    text-transform: uppercase; }
+
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+  background: #2f2f2f; }
+  .carousel-item {
+    height: 100vh; }
+
+.store-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38rem;
+  height: 18rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(28, 34, 37, 0.8);
+  border-radius: 10px; }
+  .store-name .flex-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    color: #fff; }
+    .store-name .flex-container h1 {
+      font-size: 5.5rem;
+      padding-bottom: 1rem; }
+    .store-name .flex-container p {
+      font-size: 2rem; }
+
+.offered-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8rem 0 10rem 0; }
+  .offered-section .offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    justify-content: space-around; }
+    .offered-section .offers .outer {
+      border: 2px solid #7e781c;
+      padding: 4px; }
+      .offered-section .offers .outer .inner {
+        border: 2px solid #7e781c;
+        height: 25rem;
+        background: #1C2225; }
+        .offered-section .offers .outer .inner .image {
+          width: 100%;
+          height: 50%;
+          cursor: pointer; }
+          .offered-section .offers .outer .inner .image.tile1 {
+            background: url("../img/guitar-store-min.jpg") no-repeat center center/cover; }
+          .offered-section .offers .outer .inner .image.tile2 {
+            background: url("../img/tuners-min.jpg") no-repeat center center/cover; }
+          .offered-section .offers .outer .inner .image.tile3 {
+            background: url("../img/amplifier-min.jpg") no-repeat center center/cover; }
+        .offered-section .offers .outer .inner .text {
+          text-align: center;
+          height: 50%;
+          overflow: hidden; }
+          .offered-section .offers .outer .inner .text h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: .5rem 0;
+            background: #f2ff00;
+            color: #1C2225; }
+          .offered-section .offers .outer .inner .text p {
+            font-size: 1.1rem;
+            line-height: 1.2;
+            padding-bottom: .4rem;
+            padding-top: .7rem;
+            margin: 0 .7rem;
+            margin-bottom: 1.5rem; }
+
+.companies-container {
+  background: #c4cace;
+  padding: 2rem 10rem; }
+  .companies-container .companies-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    grid-gap: 4%;
+    align-items: center;
+    margin: 0 auto; }
+    .companies-container .companies-section img {
+      width: 100%; }
+
+.testimonials-section {
+  padding: 8rem 0;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .testimonials-section .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .8rem; }
+    .testimonials-section .testimonials ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center; }
+    .testimonials-section .testimonials p {
+      border: 1px solid #7e781c;
+      border-radius: 5px;
+      padding: .5rem; }
+    .testimonials-section .testimonials img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: .5rem; }
+
+.contact-section {
+  padding: 5rem 0;
+  padding-bottom: 8rem;
+  background: #1f292e; }
+  .contact-section .form-container {
+    margin: 0 auto;
+    background: #c4cace;
+    max-width: 700px;
+    border-radius: 10px; }
+    .contact-section .form-container form {
+      padding: 3rem 5rem;
+      padding-bottom: 4rem; }
+      .contact-section .form-container form .MuiInputLabel-animated-114 {
+        font-size: 1.6rem;
+        color: #1C2225; }
+      .contact-section .form-container form .submit-btn {
+        text-transform: capitalize;
+        margin: 2rem auto 1rem auto;
+        width: 100%;
+        background: #1C2225;
+        color: #c4cace;
+        font-size: 1.5rem; }
+
+.location-container {
+  position: relative; }
+  .location-container .location-tag {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .location-container .location-tag .location-text {
+      width: 18rem;
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 2.5rem;
+      border-radius: 10px 10px 0 0;
+      margin: 0 auto;
+      color: #c4cace;
+      background: #bb0f0f;
+      text-align: center; }
+
+footer {
+  padding: 4rem 0; }
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #c4cace;
+    grid-gap: 1rem; }
+    footer .footer-container ul {
+      list-style: none; }
+      footer .footer-container ul li {
+        padding: .5rem 0;
+        border-bottom: #c4cace dotted 1px;
+        width: 90%; }
+    footer .footer-container a {
+      text-decoration: none;
+      color: #c4cace; }
+    footer .footer-container p {
+      margin: .5rem 0;
+      line-height: 1.5; }
+    footer .footer-container button {
+      width: 95%;
+      background: #c4cace;
+      color: #1C2225;
+      font-size: 1rem;
+      margin-top: .5rem; }
+    footer .footer-container .store-info {
+      width: 100%; }
+      footer .footer-container .store-info .site-name {
+        font-size: 3rem; }
+    footer .footer-container .social-links ul.list li {
+      border: none;
+      padding: 0;
+      margin: .7rem 0; }
+      footer .footer-container .social-links ul.list li a {
+        width: 100%; }
+        footer .footer-container .social-links ul.list li a .icon-container {
+          display: inline-block;
+          background: #c4cace;
+          color: #1C2225;
+          width: 2rem;
+          height: 2rem;
+          line-height: 2rem;
+          border-radius: 50%;
+          text-align: center;
+          margin: 0 .4rem; }
+      footer .footer-container .social-links ul.list li:hover a {
+        color: yellow; }
+        footer .footer-container .social-links ul.list li:hover a .icon-container {
+          background: rgba(96, 103, 113, 0.728); }
+          footer .footer-container .social-links ul.list li:hover a .icon-container svg {
+            color: yellow; }
+    footer .footer-container .site-links h2,
+    footer .footer-container .social-links h2,
+    footer .footer-container .join h2 {
+      margin-top: .7rem; }
+    footer .footer-container > *:last-child {
+      background: #1f292e;
+      grid-column: 1 / span 4;
+      padding: .5rem;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px; }

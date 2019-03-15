@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import 'media';
+
+
+$gun-metal: #1C2225;
+$metallic-silver: #c4cace;
+$outer-space: #1f292e;
+$border-color: rgb(126, 120, 28);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+// Utilities
+.container {
+  background: $gun-metal;
+  color: $metallic-silver;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+.bottom-line {
+  height: 4px;
+  width: 8rem;
+  display: block;
+  background: #f2ff00;
+  margin: 0 auto 4rem auto;
+}
+
+
+
+// Header
+header {
+  padding:10px 0px;
+  transition: all 300ms ease-in;
+  font-size: 3rem;
+
+  
+  .header_logo {
+    flex-grow: 1;
+  transition: all 300ms ease-in;
+
+  }
+  
+  .header_logo_title {
+    text-transform: uppercase;
+  }
+}
+
+// Carousel
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+  background: #2f2f2f;
+
+  &-item {
+    height: 100vh;
+  }
+  
+}
+
+.store-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38rem;
+  height: 18rem;
+  -webkit-transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);   
+  background-color: rgba(28,34,37, .8);
+  border-radius: 10px;
+
+  .flex-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    color: #fff;
+
+    h1 {
+      font-size: 5.5rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+// What we offer section
+.offered-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8rem 0 10rem 0;
+  
+
+  .offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    justify-content: space-around;
+
+    .outer {
+      border: 2px solid $border-color;
+      padding: 4px;
+
+      .inner {
+        border: 2px solid $border-color;
+        height: 25rem;
+        background: $gun-metal;
+
+        .image {
+          width: 100%;
+          height: 50%;
+          cursor: pointer;
+
+          &.tile1 {
+            background: url('../img/guitar-store-min.jpg') no-repeat center center / cover;
+          }
+          &.tile2 {
+            background: url('../img/tuners-min.jpg') no-repeat center center / cover;
+          }
+          &.tile3 {
+            background: url('../img/amplifier-min.jpg') no-repeat center center / cover;
+          }
+        }
+
+        .text {
+          text-align: center;
+          height: 50%;
+          overflow: hidden;
+
+          h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: .5rem 0;
+            background: #f2ff00;
+            color: $gun-metal;
+          }
+
+          p {
+            font-size: 1.1rem;
+            line-height: 1.2;
+            padding-bottom: .4rem;
+            padding-top: .7rem;
+            margin: 0 .7rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Company logos section
+.companies-container {
+  background: $metallic-silver;
+  padding: 2rem 10rem;
+
+  .companies-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    grid-gap: 4%;
+    align-items: center;
+    // justify-content: center;
+    margin: 0 auto;
+  
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Testimonials section
+.testimonials-section {
+  padding: 8rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .8rem;
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      padding: .5rem;
+    }
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: .5rem;
+    }
+  }
+}
+
+// Contact us section
+.contact-section {
+  padding: 5rem 0;
+  padding-bottom: 8rem;
+  background: $outer-space;
+
+  .form-container {
+    margin: 0 auto;
+    background:$metallic-silver;
+    max-width: 700px;
+    border-radius: 10px;
+
+    form {
+      padding: 3rem 5rem;
+      padding-bottom: 4rem;
+      .MuiInputLabel-animated-114 {
+        font-size: 1.6rem;
+        color: $gun-metal;
+      }
+
+      .submit-btn {
+        text-transform: capitalize;
+        margin: 2rem auto 1rem auto;
+        width: 100%;
+        background: $gun-metal;
+        color: $metallic-silver;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// Map section
+.location-container {
+  position: relative;
+
+  .location-tag {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .location-text {
+      width: 18rem;
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 2.5rem;
+      border-radius: 10px 10px 0 0;
+      margin: 0 auto;
+      color: $metallic-silver;
+      background: rgb(187, 15, 15);
+      text-align: center;
+    }
+  }
+}
+
+// Footer
+footer {
+  padding: 4rem 0;
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: $metallic-silver;
+    grid-gap: 1rem;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: .5rem 0;
+        border-bottom: $metallic-silver dotted 1px;
+        width: 90%;
+      }
+      
+    }
+
+    a {
+      text-decoration: none;
+      color: $metallic-silver;
+    }
+
+    p {
+      margin: .5rem 0;
+      line-height: 1.5;
+    }
+    
+
+    button {
+      width: 95%;
+      background: $metallic-silver;
+      color: $gun-metal;
+      font-size: 1rem;
+      margin-top: .5rem;
+    }
+
+    .store-info {
+      width: 100%;
+      
+      .site-name {
+        font-size: 3rem;
+      }
+    }
+
+    .social-links {
+
+      ul.list {
+        li {
+          border: none;
+          padding: 0;
+          margin: .7rem 0;
+
+          a {
+            width: 100%;
+            
+            .icon-container {
+              display: inline-block;
+              background: $metallic-silver;
+              color: $gun-metal;
+              width: 2rem;
+              height: 2rem;
+              line-height: 2rem;
+              border-radius: 50%;
+              text-align: center;
+              margin: 0 .4rem;
+              
+            }
+          }
+  
+
+          &:hover {
+            
+            a {
+              color: yellow;
+
+              .icon-container {
+                background: rgba(96, 103, 113, 0.728);
+
+                svg {
+                  color: yellow;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .site-links h2,
+    .social-links h2,
+    .join h2 {
+      margin-top: .7rem;
+    }
+
+    &> *:last-child {
+      background: $outer-space;
+      grid-column: 1 / span 4;
+      padding: .5rem;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+  }
+}

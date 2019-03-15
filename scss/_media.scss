@@ -1,0 +1,524 @@
+/* MEDIA QUERIES */
+
+// 374px and smaller
+@media (max-width: 374px) {
+  html {
+    font-size: 8px;
+  }
+
+  div {
+    .store-name {
+      width: 90%;
+    }
+
+  }
+
+  .container {
+
+    .section-title {
+      font-size: 4rem;
+    }
+    
+    // What we offer section
+    .offered-section {
+      width: 90%;
+      
+      
+      .offers {
+        grid-gap: 6rem;
+        grid-template-columns: 1fr;
+        
+        .outer {
+          .inner {
+            height: 53rem;
+            
+            .text {
+              h1 {
+                font-size: 4rem;
+              }
+
+              p {
+                font-size: 2.2rem;
+                margin-top: 1rem;
+              }
+
+              button {
+                font-size: 1.8rem;
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Company logos section
+    .companies-container {
+      padding: 5rem 10rem;
+      .companies-section {
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+      }
+    }
+
+    // Testimonials section
+    .testimonials-section {
+      max-width: 250px;
+      .testimonials {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        font-size: 2rem;
+
+        ul {
+          margin-top: 1.5rem;
+        }
+        
+        img {
+          margin-right: 1.5rem;
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+    }
+  
+    // Contact us section
+    .contact-section {
+      
+      .form-container {
+        width: 90%;
+
+        form {
+          padding: 2rem 3rem;
+        }
+      }
+    }
+
+    // Footer
+    footer {
+      font-size: 2rem;
+
+      .footer-container {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        grid-template-areas: 
+        'store-info'
+        'social' 
+        'site-links'
+        'join'
+        'copyright';
+
+        button {
+          font-size: 2rem;
+        }
+
+        .store-info {
+          width: 100%;
+          grid-area: store-info;
+          .site-name {
+            font-size: 4rem;
+            text-align: center;
+          }
+        }
+
+        .site-links {
+          grid-area: site-links;
+        }
+
+        .social-links {
+          grid-area: social;
+          ul.list {
+            li {
+              a {
+                .icon-container {
+                  width: 3.5rem;
+                  height: 3.5rem;
+                  line-height: 3.5rem;
+                  margin: .4rem 1.2rem;
+                }
+              }
+            }
+          }
+        }
+
+        .join {
+          grid-area: join;
+          margin-top: 1rem;
+        }
+
+        .copyright {
+          grid-area: copyright;
+          font-size: 2rem;
+        }
+      }
+    }
+
+
+  }
+}
+
+// 544px and smaller
+@media (min-width: 375px) and (max-width: 544px) {
+  html {
+    font-size: 9px;
+  }
+  
+  .container {
+
+    .section-title {
+      font-size: 4rem;
+    }
+    
+    // What we offer section
+    .offered-section {
+      max-width: 350px;
+      
+      .offers {
+        grid-gap: 6rem;
+        grid-template-columns: 1fr;
+        
+        .outer {
+          .inner {
+            height: 50rem;
+            
+            .text {
+              h1 {
+                font-size: 4rem;
+              }
+
+              p {
+                font-size: 2.2rem;
+                margin-top: 1rem;
+              }
+
+              button {
+                font-size: 1.8rem;
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Company logos section
+    .companies-container {
+      padding: 3rem 4rem;
+      .companies-section {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+      }
+    }
+
+    // Testimonials section
+    .testimonials-section {
+      max-width: 250px;
+      .testimonials {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        font-size: 2rem;
+
+        ul {
+          margin-top: 1.5rem;
+        }
+        
+        img {
+          margin-right: 1.5rem;
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+    }
+  
+    // Contact us section
+    .contact-section {
+      
+      .form-container {
+        width: 90%;
+
+        form {
+          padding: 2rem 3rem;
+        }
+      }
+    }
+
+    // Footer
+    footer {
+      font-size: 2rem;
+
+      .footer-container {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        grid-template-areas: 
+        'store-info'
+        'social' 
+        'site-links'
+        'join'
+        'copyright';
+
+        button {
+          font-size: 2rem;
+        }
+
+        .store-info {
+          width: 100%;
+          grid-area: store-info;
+          .site-name {
+            font-size: 4rem;
+            text-align: center;
+          }
+        }
+
+        .site-links {
+          grid-area: site-links;
+        }
+
+        .social-links {
+          grid-area: social;
+          ul.list {
+            li {
+              a {
+                .icon-container {
+                  width: 3.5rem;
+                  height: 3.5rem;
+                  line-height: 3.5rem;
+                  margin: .4rem 1.2rem;
+                }
+              }
+            }
+          }
+        }
+
+        .join {
+          grid-area: join;
+        }
+
+        .copyright {
+          grid-area: copyright;
+          font-size: 2rem;
+        }
+      }
+    }
+
+  }
+}
+
+// 768px and smaller
+@media (min-width: 545px) and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  
+  .container {
+
+    .section-title {
+      font-size: 4rem;
+    }
+    
+    // What we offer section
+    .offered-section {
+      max-width: 400px;
+      
+      .offers {
+        grid-gap: 6rem;
+        grid-template-columns: 1fr;
+        
+        .outer {
+          .inner {
+            height: 50rem;
+            
+            .text {
+              h1 {
+                font-size: 4rem;
+              }
+
+              p {
+                font-size: 2.2rem;
+                margin-top: 1rem;
+              }
+
+              button {
+                font-size: 1.8rem;
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Company logos section
+    .companies-container {
+      padding: 2rem 4rem;
+      .companies-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    // Testimonials section
+    .testimonials-section {
+      max-width: 500px;
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+        grid-row-gap: 2rem;
+        font-size: 1.5rem;
+
+        img {
+          margin-right: .75rem;
+        }
+      }
+    }
+  
+    // Contact us section
+    .contact-section {
+      .form-container {
+        max-width: 500px;
+      }
+    }
+
+    // Footer
+    footer {
+      .footer-container {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'store-info store-info store-info'
+        'social site-links join'
+        'copyright copyright copyright';
+
+        .store-info {
+          width: 100%;
+          grid-area: store-info;
+        }
+
+        .site-links {
+          grid-area: site-links;
+        }
+
+        .social-links {
+          grid-area: social;
+        }
+
+        .join {
+          grid-area: join;
+        }
+
+        .copyright {
+          grid-area: copyright;
+        }
+      }
+    }
+
+  }
+}
+
+// 992px and smaller
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 11px;
+  }
+  
+  .container {
+
+    // What we offer section
+    .offered-section {
+      max-width: 750px;
+
+      .offers {
+        .outer {
+          .inner {
+            .text {
+              p {
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Company logos section
+    .companies-container {
+      .companies-section {
+        max-width: 750px;
+      }
+    }
+
+    // Testimonials section
+    .testimonials-section {
+      max-width: 750px;
+    }
+
+    // Contact us section
+    .contact-section {
+      .form-container {
+        max-width: 450px;
+      }
+    }
+
+    // Footer
+    footer {
+      .footer-container {
+        max-width: 750px;
+      }
+    }
+  }
+
+}
+
+// 1200px and smaller
+@media (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .container {
+
+    // What we offer section
+    .offered-section {
+      max-width: 900px;
+
+      .offers {
+        .outer {
+          .inner {
+            .text {
+              p {
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Company logos section
+    .companies-container {
+      .companies-section {
+        max-width: 800px;
+      }
+    }
+
+    // Testimonials section
+    .testimonials-section {
+      max-width: 900px;
+
+    }
+
+    // Contact us section
+    .contact-section {
+      .form-container {
+        max-width: 550px;
+      }
+    }
+
+    // Footer
+    footer {
+      .footer-container {
+        max-width: 900px;
+      }
+    }
+
+  }
+}
